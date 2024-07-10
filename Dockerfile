@@ -13,6 +13,6 @@ WORKDIR /usr/share/nginx/html
 # Copia los archivos construidos de la etapa anterior
 COPY --from=build /app/dist .
 # Configura Nginx
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY nginx.conf /etc/nginx/nginx.conf
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
