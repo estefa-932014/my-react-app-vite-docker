@@ -1,0 +1,19 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  # Build Job
+  build:
+    uses: estefa-932014/devops-templates/.github/workflows/build-react.yml@main
+    with:
+      node-version: '18.x'
+    secrets:
+      conexion_token: ${{ secrets.PAT_TOKEN }}
