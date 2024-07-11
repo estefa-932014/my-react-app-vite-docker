@@ -16,4 +16,4 @@ RUN npm run build
 
 EXPOSE 8080
 
-CMD [ "serve", "-s", "dist" ]
+CMD [ "serve", "-p", "8080", "-s", "dist" ]
