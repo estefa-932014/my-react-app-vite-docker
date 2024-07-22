@@ -1,0 +1,18 @@
+name: CI/CD App react
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  # Build Job
+  build:
+    uses: estefa-932014/devops-templates/.github/workflows/deploy-dockerhub.yml@main
+    secrets:
+      user_dockerhub: ${{ secrets.DOCKERHUB_USERNAME }}
+      token_dockerhub: ${{ secrets.DOCKERHUB_TOKEN }}

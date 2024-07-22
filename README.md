@@ -75,3 +75,5 @@ https://vitejs.dev/
 https://pages.github.com/
 https://www.npmjs.com/package/gh-pages
 
+Aplicación para subir con Github Actions
+
