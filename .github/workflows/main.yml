@@ -1,4 +1,4 @@
-name: CI/CD App react
+name: Build & Deploy DockerHub
 
 on:
   push:
